@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naveen Gudennavar | Portfolio</title>
+    <title>Naveen Gudennavar | Resume</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -14,193 +14,174 @@
             background-color: #f8f9fa;
         }
 
-        nav {
-            background-color: #007bff;
-        }
-
-        nav a {
-            color: white !important;
-        }
-
-        header {
-            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
-            color: white;
-            height: 100vh;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        header h1 {
-            font-size: 4rem;
-            margin-bottom: 0;
-        }
-
-        header p {
-            font-size: 1.5rem;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            color: #008080; /* Changed color to teal */
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .skills-list, .languages-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .skills-list li, .languages-list li {
-            background: #e3e3e3;
-            margin: 0.5rem 0;
-            padding: 0.5rem;
-            border-radius: 4px;
-            text-align: center;
-        }
-
-        .project-item {
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
             background: #fff;
+            padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .contact-info {
             margin-bottom: 20px;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
+        .contact-info p {
+            margin: 0;
+            font-size: 0.9rem;
         }
 
-        footer a {
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
             color: #007bff;
-            text-decoration: none;
+        }
+
+        .list-unstyled li {
+            padding-left: 1rem;
+            text-indent: -1rem;
+        }
+
+        .list-unstyled li::before {
+            content: "\2022";
+            color: #007bff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1rem;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Naveen Gudennavar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Home Section -->
-    <header id="home">
-        <div class="container">
+    <div class="container">
+        <!-- Header Section -->
+        <header class="text-center">
             <h1>Naveen Gudennavar</h1>
-            <p>Software Engineer | Web Developer</p>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container my-5">
-        <h2 class="section-title">About Me</h2>
-        <p>
-            I am a passionate software engineer with a focus on web development. I enjoy creating dynamic and responsive web applications that provide seamless user experiences. With a strong foundation in both front-end and back-end development, I aim to build software that not only meets client requirements but also exceeds user expectations.
-        </p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="container my-5">
-        <h2 class="section-title">Skills</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h4>Technical Skills</h4>
-                <ul class="skills-list">
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>SQL</li>
-                    <li>HTML/CSS</li>
-                    <li>JavaScript</li>
-                </ul>
+            <div class="contact-info">
+                <p>Dharwad, India | +91 8431147533</p>
+                <p>Email: <a href="mailto:gudennavarnaveen@gmail.com">gudennavarnaveen@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/NaveenGudennavar">github.com/NaveenGudennavar</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/naveen023">linkedin.com/in/naveen023</a></p>
             </div>
-            <div class="col-md-6">
-                <h4>Soft Skills</h4>
-                <ul class="skills-list">
-                    <li>Teamwork</li>
-                    <li>Leadership</li>
-                    <li>Problem Solving</li>
-                    <li>Quick Learner</li>
-                    <li>Communication</li>
-                    <li>Time Management</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container my-5">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-item">
-            <h4>Static E-commerce Website</h4>
-            <p>Led a team in the development of a static e-commerce website focused on user-friendly design, mobile responsiveness, and secure transactions. Implemented features like product categorization, search functionality, and personalized recommendations.</p>
-            <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-        <!-- Add more project items as needed -->
-    </section>
+        <!-- Objective Section -->
+        <section class="section">
+            <h2 class="section-title">Objective</h2>
+            <p>
+                To work for an organization that provides opportunities to continue learning and improve my skills & knowledge, where I can contribute to the growth and success of the company through my academic and practical knowledge.
+            </p>
+        </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="container my-5">
-        <h2 class="section-title">Experience</h2>
-        <p><strong>Software Developer Intern</strong> (2 months)</p>
-    </section>
+        <hr>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container my-5">
-        <h2 class="section-title">Contact</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-    </section>
+        <!-- Education Section -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <ul class="list-unstyled">
+                <li><strong>BCA</strong>, JSS Shri Munjunatheshwar UG & PG Studies Dharwad (2021 - 2024, Pursuing)</li>
+                <li><strong>PUC</strong>, Swamy Vivekananda Science Savadatti (2020 - 2021, Percentage: 71%)</li>
+                <li><strong>SSLC</strong>, SRI Kumareshwar English Medium High School Savadatti (2018 - 2019, Percentage: 71%)</li>
+            </ul>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Naveen Gudennavar. All rights reserved.</p>
-        <p>
-            <a href="https://github.com/NaveenGudennavar">GitHub</a> |
-            <a href="https://linkedin.com/in/naveen023">LinkedIn</a> |
-            <a href="mailto:gudennavarnaveen@gmail.com">Email</a>
-        </p>
-    </footer>
+        <hr>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Projects Section -->
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            <p><strong>Static E-commerce Website</strong></p>
+            <p>
+                Led a team in developing a static e-commerce website focused on user-friendly design, mobile responsiveness, and secure transactions. Implemented features like product categorization, search functionality, and personalized recommendations.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Technical Skills Section -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul class="list-unstyled">
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Soft Skills Section -->
+        <section class="section">
+            <h2 class="section-title">Soft Skills</h2>
+            <ul class="list-unstyled">
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Problem Solving</li>
+                <li>Quick Learner</li>
+                <li>Communication</li>
+                <li>Time Management</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Experience Section -->
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+            <p><strong>Software Developer Intern</strong> (2 months)</p>
+        </section>
+
+        <hr>
+
+        <!-- Interests Section -->
+        <section class="section">
+            <h2 class="section-title">Interests</h2>
+            <p>Learning New Technologies, Movies, Music, Reading Novels</p>
+        </section>
+
+        <hr>
+
+        <!-- Languages Section -->
+        <section class="section">
+            <h2 class="section-title">Languages</h2>
+            <ul class="list-unstyled">
+                <li>English</li>
+                <li>Kannada</li>
+                <li>Hindi</li>
+            </ul>
+        </section>
+
+    </div>
+
 </body>
 
 </html>
